@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Datos temporales / screenshots
+datasets/tmp/
+*.log
+
+# Secretos (NUNCA subir)
+.env
+*.token
+secrets/
+
+# SO / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# fixtures generados por scripts/generar_fixtures_qr.py (regenerables)
+tests/fixtures/campanas_reales/*.eml
+tests/fixtures/campanas_reales/*.pdf
+tests/fixtures/campanas_reales/*.png
+
+# informes generados en la demo
+demo/informes/*.html
+demo/informes/*.pdf
+demo/informes/*.json
+
+# capturas de pantalla de las detonaciones
+datasets/tmp/
+
+# capturas del sandbox generadas al ejecutar los tests/demo
+demo/informes/datasets/
+**/datasets/tmp/
+
+# base de datos generada al ejecutar
+qreaper.db
+*.db

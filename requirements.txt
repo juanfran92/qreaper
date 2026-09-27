@@ -1,0 +1,29 @@
+# --- Módulo 1: decode ---
+pyzbar
+opencv-python
+pillow
+pdf2image
+# Fallback para PDF sin poppler (Windows): decode.py lo usa si pdf2image falla.
+PyMuPDF
+# --- Módulo 2: análisis URL ---
+python-whois
+tldextract
+requests
+# --- Módulo 3: sandbox ---
+playwright
+# --- Módulo 5: informe ---
+# Solo el PDF necesita librería externa. El HTML se monta con la biblioteca
+# estándar a propósito: un informe no puede depender de más cosas que puedan
+# fallar al instalar.
+reportlab
+# --- Capa API REST + MCP (Jose) ---
+fastapi
+uvicorn[standard]
+python-multipart
+mcp>=2
+# --- Módulo 6 / general ---
+click
+# --- generacion de fixtures (scripts/generar_fixtures_qr.py) ---
+qrcode[pil]
+# --- tests ---
+pytest
